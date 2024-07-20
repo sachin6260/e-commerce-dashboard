@@ -1,0 +1,84 @@
+/* Style for the container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin-bottom: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  
+  /* Style for the heading */
+  .form-container h1 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Style for the input fields */
+  .form-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .form-container input:focus {
+    border-color: #6e8efb;
+    outline: none;
+  }
+  
+  /* Style for invalid input message */
+  .invalid-input {
+    color: red;
+    font-size: 0.9rem;
+    margin: -10px 0 10px;
+    background-color: #ffebeb;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for invalid input fields */
+  .form-container input:invalid {
+    border-color: red;
+  }
+  
+  /* Style for the button */
+  .form-container button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .form-container button:hover {
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+    transform: translateY(-2px);
+  }
+  
+  /* Optional: Style for a smooth transition on focus and hover effects */
+  input, button {
+    transition: all 0.3s ease-in-out;
+  }
+  

@@ -1,0 +1,130 @@
+ 
+
+.productlist-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.productlist {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px 0;
+    padding: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.productlist h2 {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+     color: #0073e6;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+.searchProduct {
+    width: 60%; /* Make the input longer */
+    padding: 12px 20px;
+    margin: 20px auto; /* Center the input */
+    display: block; /* Ensure margin auto works */
+    border: 2px solid #ccc;
+    border-radius: 25px; /* Make the input rounded */
+    font-size: 16px;
+    transition: all 0.3s ease-in-out; /* Add animation */
+}
+
+.searchProduct:focus {
+    width: 65%; /* Expand the input on focus */
+    border-color:  #a777e3; /* Change border color on focus */
+    box-shadow: 0 0 8px  #a777e3; /* Add a shadow effect on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+.productlist ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.productlist ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.productlist ul li.list-header {
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+.productlist ul li.list-item {
+    cursor: pointer;
+}
+
+.productlist ul li.list-item:hover {
+    background-color: #e0f7fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+
+.productlist ul li span {
+    flex: 1;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+.productlist ul li span + span {
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+.productlist ul li.list-item:hover span {
+    color: #0073e6;
+}
+
+.btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .update-btn {
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+
+ 

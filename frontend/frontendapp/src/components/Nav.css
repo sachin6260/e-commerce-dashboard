@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* NavBar.css */
+
+.nav-section {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+    padding:  20px;
+  }
+  
+  .nav-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .nav-section ul  h1 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);        margin-right: 80px;
+        padding: 10px;
+        margin-left: 30px;
+  
+    }
+ 
+ 
+  
+ 
+  
+  .nav-right{
+ display: flex;
+ justify-content: space-between;
+  }
+  .nav-right h1 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);       
+        padding: 10px;
+   }
+  .nav-section ul li {
+    margin-right: 20px;
+  }
+  
+  .nav-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .nav-section ul li a:hover,
+  .nav-section ul li a.active {
+    border-bottom: solid 2px;
+     color: #fff;
+  }
+  
+ 

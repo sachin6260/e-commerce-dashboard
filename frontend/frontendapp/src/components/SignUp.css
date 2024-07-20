@@ -1,0 +1,80 @@
+ 
+
+/* RegisterForm.css */
+
+ .form-data{
+  font-family: 'Arial', sans-serif;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+   margin-top: 40px;
+
+ }
+
+.register-form {
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.register-form h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 25px;
+  box-sizing: border-box;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.register-form input::placeholder {
+  color: #d1d1d1;
+}
+
+.register-form input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.register-form button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  color: #6e8efb;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.register-form button:hover {
+  background-color: #e1e1e1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
